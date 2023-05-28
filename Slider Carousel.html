@@ -1,0 +1,289 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ0KdKCojy1HVIeGJXKxfWjFJzreIMcPvurw9YRLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <title>Shipping project</title>
+    <style>
+      .navbar-custom {
+        background-color: red;
+      }
+      .navbar-custom .navbar-brand,
+      .navbar-custom .navbar-text,
+      .navbar-custom .navbar-nav .nav-link {
+        color: black;
+      }
+      .bg-image{
+        height: 500px;
+        width: 100%;
+      }
+      .card {
+     margin: 10px;
+     }
+     
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  height: 40px;
+}
+
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom justify-content-center mb-5">
+    <div class="container-fluid d-flex align-items-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="index.html" class="mx-auto"><img src="z-logo-default.svg"></a>
+      <div class="collapse navbar-collapse flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav justify-content-between w-100">
+          <li class="nav-item">
+            <a class="nav-link" href="rent a house.html">Rent a house</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about us.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact-us">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="text-center"><p>Choose your dream house :</p></div>
+  <div class="container">
+    <div class="row filters mt-2">
+      <div class="col-12 mb-3 col-md-6">
+          <select class="form-select" id="filterByCity" onchange="searchFilter()">
+              <option value="" selected>Filter by City</option>
+              <option value="Austin">Austin</option>
+              <option value="Boston">Boston</option>
+              <option value="New-york">New york</option>
+          </select>
+      </div>
+      <div class="col-12 col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Search by city" aria-label="Search cards"
+              onkeyup="searchFilter()">
+  
+      </div>
+    </div>
+      </div>
+  </div>
+
+  
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-4 col-12">
+      <div class="card Boston five">
+        <img src="images (28).png" class="card-img-top" alt="Image 1">
+        <div class="card-body">
+          <h5 class="card-title">Boston</h5>
+          <p class="card-text">$500000 </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="card New-york seven">
+        <img src="images (29).png" class="card-img-top" alt="Image 2">
+        <div class="card-body">
+          <h5 class="card-title">New york</h5>
+          <p class="card-text">$750000</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="card New-york five">
+        <img src="images (4).png" class="card-img-top" alt="Image 3">
+        <div class="card-body">
+          <h5 class="card-title">New york</h5>
+          <p class="card-text">$500000 </p>
+        </div>
+      </div>
+    </div>
+    <!-- Add more cards here -->
+    <div class="row">
+      <div class="col-lg-4 col-12">
+        <div class="card Boston five">
+          <img src="images (5).png" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Boston</h5>
+            <p class="card-text">$500000 </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="card Boston five">
+          <img src="images (21).png" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Boston</h5>
+            <p class="card-text">$500000 </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="card New-york seven">
+          <img src="images (7).png" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+            <h5 class="card-title">New york</h5>
+            <p class="card-text">$750000</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards here -->
+    <div class="row">
+      <div class="col-lg-4 col-12">
+        <div class="card Austin seven ">
+          <img src="images (8).png" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Austin</h5>
+            <p class="card-text">$750000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="card Austin nine">
+          <img src="images (9).png" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Austin</h5>
+            <p class="card-text">$900000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="card Boston nine">
+          <img src="images (27).png" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Boston</h5>
+            <p class="card-text">$900000</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards here
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images (11).png" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Austin</h5>
+            <p class="card-text">$750000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images (10).png" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Austin</h5>
+            <p class="card-text">$900000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images (13).png" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+            <h5 class="card-title">New york</h5>
+            <p class="card-text">$900000</p>
+          </div>
+        </div>
+      </div> -->
+
+  </div>
+  </div>  
+</div>
+<!-- Move these elements outside of the div that contains the row element with the cards -->
+<div class="container-fluid mt-5 d-flex align-items-center justify-content-center" id="Contact-us">
+  <a href="http://zillow.com/z/buying/app-download?itc=zw_zw_zw_zillow-footer_btn_ios-download"><div class="mx-2"><img src="app-store-badge.svg"></div></a>
+  <a href="http://zillow.com/z/buying/app-download?itc=zw_zw_zw_zillow-footer_btn_android-download"><div><img src="google-play-badge.svg"></div></a>
+ </div>
+ <div class="d-flex justify-content-center mt-5 flex-sm-nowrap flex-wrap">
+  <ul class="me-3"><img src="z-logo-default.svg"></ul>
+  <ul class="list-inline me-3 ms-3">
+  <li class="list-inline-item">Follow us:</li>
+  <li class="list-inline-item"> 
+  <a href="https://www.facebook.com/Zillow">
+  <img src="download.png" alt="Facebook" style="width: 40px;">
+  </a>
+  </li>
+  <li class="list-inline-item">
+  <a href="https://www.instagram.com/zillow">
+  <img src="instagram.png" alt="Instagram" style="width: 40px;">
+  </a>
+  </li>
+  <li class="list-inline-item">
+  <a href="https://www.tiktok.com/@zillow">
+  <img src="tiktok.png" alt="TikTok" style="width: 40px;">
+  </a>
+  </li>
+  <li class="list-inline-item">
+  <a href="https://twitter.com/zillow">
+  <img src="twitter.png" alt="Twitter" style="width: 50px;">
+  </a>
+  </li>
+  </ul>
+  <ul class="list-inline ms-3">
+  <li class="list-inline-item">© 2006-2023 Zillow</li>
+  <li class="list-inline-item"><img src="download (10).png" width="50px"></li>
+  </ul>
+ </div>
+ <div class="text-center mt-5">
+  <img src="footer-art (1).svg" class="mx-auto img-fluid">
+ </div>
+ 
+ 
+ </div>
+ <script>
+  var searchFilter = () => {
+   let selectedCity = document.getElementById("filterByCity").value;
+   const input = document.querySelector(".form-control");
+   const cards = document.getElementsByClassName("card");
+   let textBox = input.value;
+   for (let i = 0; i < cards.length; i++) {
+     let title = cards[i].querySelector(".card-body");
+     if (
+       (cards[i].classList.contains(selectedCity) || selectedCity == "") &&
+       title.innerText.toLowerCase().indexOf(textBox.toLowerCase()) > -1
+     ) {
+       cards[i].classList.remove("d-none");
+     } else {
+       cards[i].classList.add("d-none");
+     }
+   }
+ 
+   // Hide or show the parent rows
+   const rows = document.querySelectorAll(".row:not(.filters)");
+   for (let i = 0; i < rows.length; i++) {
+     const visibleCards = rows[i].querySelectorAll(".card:not(.d-none)");
+     if (visibleCards.length === 0) {
+       rows[i].classList.add("d-none");
+     } else {
+       rows[i].classList.remove("d-none");
+     }
+   }
+ };
+ 
+ 
+ </script>
+ 
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>  
